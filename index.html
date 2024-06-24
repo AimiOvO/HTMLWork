@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>少女前线带带萌新网</title>
+		<link rel="stylesheet" type="text/css" href="css/index-1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<style type="text/css">
+			body{
+				background-color: #262625;
+			}
+			.main{
+				background-image: url(img/bg/Shattered_Connexion_Login_Wallpaper2.png),url(img/bg/Login_20200404.png);
+				background-repeat: no-repeat,no-repeat;
+				background-position: top, bottom;
+				background-size: 1423px 871px, 1423px 648px;
+				background-position: top center,bottom center;
+				background-color: #fff;
+			}
+			.official-link{
+				background: url(img/download123.png) no-repeat;
+				background-size: 150px 264px;
+			}
+			.notice{
+				background: url(img/download0.png);
+				background-repeat: no-repeat;
+				background-size: 1369.50px 678.50px;
+				background-position: bottom left;
+			}
+			.notic-nav button.active{
+				background: url(img/download.png) no-repeat;
+				background-size: 150px 68px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header" id="header">
+			<div class="logo">
+				<img src="img/logo.png"/>
+				<p>带带萌新网</p>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="raiders.html">攻略</a></li>
+					<li><a href="introduction.html">游戏介绍</a></li>
+					<li class="actvie">
+						<a href="index.html">首页</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main" id="main">
+			<div class="mader">
+				<img class="headimg" src="img/headimg.jpg"/>
+				<p class="mader-name">NekoAM</p>
+				<p class="welcome">Welcome to <span class="impot">GFcarryNEW</span>.net!</p>
+				<p class="welcome">欢迎来到<span class="impot">少前带带萌新网</span>！</p>
+			</div>
+			<div class="notice">
+				<div class="doll">
+					<img class="dollleft" src="img/download4.png"/>
+					<img class="dollright" src="img/Pic_OTs12.png"/>
+				</div>
+				<div class="notic-info">
+					<div class="notic-nav">
+						<ul>
+							<li><button class="tablinks" onclick="openNotice(event, 'Vesion')" id="defaultOpen">更新内容</button></li>
+							<li><button class="tablinks" onclick="openNotice(event, 'Strategy')">攻略</button></li>
+						</ul>
+					</div>
+					<div class="notic-main">
+						<div id="Vesion" class="tabcontent">
+							<article>
+								<section>
+									<p>V1.0：</p>
+									<p>网页初版完成，更新攻略与游戏介绍</p>
+								</section>
+							</article>
+						</div>
+						<div id="Strategy" class="tabcontent">
+							<article>
+								<section>
+									<ul>
+										<li><a href="rdPosts1.html">[新手攻略]练枪配队一图流</a></li>
+										<li><a href="rdPosts2.html">[进阶攻略]配队指北</a></li>
+										<li><a href="rdPosts3.html">[活动攻略]夏海秘闻打捞</a></li>
+									</ul>
+								</section>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="official-link">
+				<img src="img/code_xz.png"/><br />
+				<a href="#">官网</a>
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<p>网页支持：NekoAM</p>
+			<p>资料来源：NGA少女前线板块、少女前线贴吧、少女前线Wiki</p>
+			<p>图片素材：少女前线Wiki</p>
+		</div>
+		<script type="text/javascript">
+			function openNotice(evt, NoticeName) {
+			    var i, tabcontent, tablinks;
+			    tabcontent = document.getElementsByClassName("tabcontent");
+			    for (i = 0; i < tabcontent.length; i++) {
+			        tabcontent[i].style.display = "none";
+			    }
+			    tablinks = document.getElementsByClassName("tablinks");
+			    for (i = 0; i < tablinks.length; i++) {
+			        tablinks[i].className = tablinks[i].className.replace(" active", "");
+			    }
+			    document.getElementById(NoticeName).style.display = "block";
+			    evt.currentTarget.className += " active";
+			}
+			document.getElementById("defaultOpen").click();
+		</script>
+	</body>
+</html>

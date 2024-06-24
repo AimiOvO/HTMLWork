@@ -1,0 +1,162 @@
+.main{
+	width: 1423px;
+	height: 1624px;
+	position: relative;
+	margin: 0 auto;
+}
+.official-link{
+	position: sticky;
+	left: 88%;
+	top: 35%;
+	width: 150px;
+	height: 264px;
+}
+.official-link img{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 27px;
+	top: 34px;
+}
+.official-link a{
+	text-decoration: none;
+	font-size: 1.3em;
+	font-weight: bolder;
+	color: #fff;
+	background-color: #FFB400;
+	position: absolute;
+	left: 45px;
+	top: 57%;
+	padding: 2px 12px 2px;
+	line-height: 30px;
+}
+.official-link a:hover{
+	color: #E13439;
+	transition: all 0.3s ease;
+}
+.mader{
+	position: absolute;
+	left: 50%;
+	top: 8%;
+	transform: translate(-50%,0);
+}
+.headimg{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 120px;
+	border-radius: 50%;
+	border: solid 6px #aaa;
+}
+.mader p{
+	color: #fff;
+	text-align: center;
+}
+.mader-name{
+	font-weight: 1.4em;
+	font-weight: bold;
+	line-height: 50px;
+	text-shadow: 10px 10px 5px #0004
+}
+.welcome{
+	font-size: 2em;
+	line-height: 38px;
+	font-weight: bold;
+	text-shadow: 10px 10px 5px #0004;
+}
+.impot{
+	color: #FFB400;
+}
+.notice{
+	width: 1423px;
+	height: 1109px;
+	position: absolute;
+	top: 370px;
+	overflow: hidden;
+}
+.dollleft{
+	width: 750px;
+	position: absolute;
+	left: -160px;
+}
+.dollright{
+	width: 450px;
+	position: absolute;
+	right: 18px;
+	top: 0px;
+}
+.notic-info{
+	position: absolute;
+	width: 1369.50px;
+	height: 678.50px;
+	bottom: 0;
+}
+.notic-nav{
+	border-bottom: solid 6px #FFB400;
+	width: 1284px;
+	height: 109px;
+	position: relative;
+}
+.notic-nav ul{
+	position: absolute;
+	left: 34px;
+	bottom: 0;
+}
+.notic-nav ul li{
+	list-style: none;
+	float: left;
+}
+.notic-nav button{
+	background-color:inherit;
+	border: none;
+	outline: none;
+	width: 150px;
+	height: 68px;
+	color: #FFB400;
+	font-size: 1.8em;
+	font-weight: bolder;
+	line-height: 68px;
+	text-align: center;
+}
+.notic-nav button:hover{
+	background-color:inherit;
+	color: #E13439;
+	transition: all 0.3s ease;
+}
+.notic-nav button.active{
+	color: #fff;
+	transition: all 0s;
+}
+.tabcontent{
+	display: none;
+	animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.notic-main{
+	position: absolute;
+	left: 94px;
+}
+.notic-main article{
+	margin-top: 42px;
+}
+
+.notic-main section p{
+	color: #FFF;
+	font-size: 1.4em;
+	line-height: 42px;
+}
+.notic-main section ul li{
+	list-style: none;
+}
+.notic-main section a{
+	color: #FFF;
+	font-size: 1.4em;
+	line-height: 42px;
+	text-decoration: none;
+}
+.notic-main section a:hover{
+	color: #E13439;
+}
